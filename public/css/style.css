@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*, *:before, *:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html, body{
+	height: 100%;
+	width: 100%;
+	font-style: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+    background-color: antiquewhite;
+    font-family: "Poppins";
+    color: blueviolet;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+input, button, textarea{font-family: inherit;}
+
+input::-ms-clear{display:none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a {color:blueviolet}
+a:hover{text-decoration: none;}
+a:active{color:blueviolet}
+ul li{list-style-type: none;}
+img{vertical-align: top;}
+html {
+    scroll-behavior: smooth;
+}
+h1,h2, h3, h4, h5, h6{font-weight: 400;}
+/*---------------------*/
+[class$="container"] {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+@media (min-height: 900px) {
+    footer {
+        transform: translateY(120%)
+    }
+}
+.button__general__setone {
+    border-radius: 10px;
+    border: 2px solid blueviolet;
+    background-color: antiquewhite;
+    color: blueviolet;
+    padding: 5px 10px;
+    font-weight: 600;
+    font-size: 20px;
+    transition: all 0.2s ease;
+}
+.button__general__setone:hover {
+    background-color: blueviolet;
+    color: antiquewhite;
+    box-shadow: 7px 6px 23px -8px rgba(138,43,226,0.74);
+    -webkit-box-shadow: 7px 6px 23px -8px rgba(138,43,226,0.74);
+    -moz-box-shadow: 7px 6px 23px -8px rgba(138,43,226,0.74);
+}
+.button__general__settwo {
+    border-radius: 10px;
+    border: 2px solid rgb(255, 142, 161);
+    background-color: antiquewhite;
+    color: rgb(255, 142, 161);
+    padding: 5px 10px;
+    font-weight: 600;
+    font-size: 20px;
+    transition: all 0.2s ease;
+}
+.button__general__settwo:hover {
+    background-color: rgb(255, 142, 161);
+    color: antiquewhite;
+    box-shadow: 10px 10px 23px -8px rgba(255,142,161,0.74);
+    -webkit-box-shadow: 10px 10px 23px -8px rgba(255,142,161,0.74);
+    -moz-box-shadow: 10px 10px 23px -8px rgba(255,142,161,0.74);
+}
+header {
+    margin-bottom: 25px;
+}
+.header__links {
+    transition: all 0.3s ease;
+}
+.header__links:hover {
+    transform: translateY(-5%) scale(1.05);
+}
+.header__container {
+    padding: 25px 0px;
+    border-bottom: 2px solid rgb(255, 142, 161);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__menu ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.header__logo div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.header__logo div img{
+    width: 100px;
+    border-radius: 10px;
+}
+.header__logo div p{
+   font-size: 20px;
+   font-weight: 800;
+}
+.main__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+.main__item {
+    border: 2px solid rgb(255, 142, 161);
+    border-radius: 10px;
+    padding: 40px 25px;
+    box-shadow: 15px 14px 30px -8px rgba(255,142,161,0.74);
+    -webkit-box-shadow: 15px 14px 30px -8px rgba(255,142,161,0.74);
+    -moz-box-shadow: 15px 14px 30px -8px rgba(255,142,161,0.74);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.main__title {
+    text-align: center;
+    font-weight: 600;
+}
+.main__info {
+    border: 2px solid rgb(255, 142, 161);
+    background-color: rgb(255, 142, 161);
+    color: antiquewhite;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 5px 10px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.main__users {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.main__add {
+    padding: 5px 10px;
+}
+.main__description {
+    line-height: 120%;
+    max-height: 168px;
+    min-height: 168px;
+    overflow: auto;
+}
+.main__description::-webkit-scrollbar {
+    width: 7px;
+    color: aqua;
+}
+.main__description::-webkit-scrollbar-thumb {
+    background-color: blueviolet;
+    border-radius: 5px;
+}
+.main__settings {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.main__location {
+    padding: 5px 10px;
+    background-color: crimson;
+    border-radius: 10px;
+}
+.footer__logo img {
+    width: 100px;
+    border-radius: 10px;
+}
+main {
+    margin-bottom: 100px;
+}
+footer {
+    background-color: rgb(255, 142, 161);
+    padding: 25px 0px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.main__form {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.main__left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.main__right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.main__form label, .main__form input {
+    margin-bottom: 10px;
+}
+.main__form input {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: blueviolet;
+    font-size: 20px;
+}
+.main__left textarea {
+    height: 200px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: blueviolet;
+    font-size: 20px;
+    resize: none;
+}
+.main__check {
+    font-size: 15px;
+}
+.main__undertitle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.main__users-title {
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+.main__users-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main__users-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.main__addcontainer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.main__addcontainer-form {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: blueviolet;
+    font-size: 20px;
+}
+.main__addusers {
+    margin: 0 auto;
+}
+.main__addusers input {
+    margin-bottom: 25px;
+}
+.main__index-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 25px;
+}

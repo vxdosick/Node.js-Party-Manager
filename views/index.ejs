@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head", {title: "Party Manager"}) %>
+<body>
+    <div class="wrapper">
+        <%- include("partials/header")%>
+        <main>
+            <div class="main__container">
+                <div class="main__list">
+                    <% if (parties.length !== 0) { %>
+                        <% parties.forEach(function(party, index) { %>
+                            <%- include("partials/card", {
+                                name: party.name,
+                                info: party.info,
+                                date: party.date,
+                                location: party.location,
+                                users: party.users,
+                                index: index
+                            }) %>
+                        <% }) %>
+                    <% } else { %>
+                        <h1 class="main__index-title">Please add party.</h1>
+                    <% } %>
+                </div>
+            </div>       
+        </main>
+        <%- include("partials/footer")%>
+    </div>
+</body>
+</html>

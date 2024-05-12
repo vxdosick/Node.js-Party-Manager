@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head", {title: "Party Manager Users"})%>
+<body>
+    <%- include("partials/header.ejs")%>
+    <main class="main__container">
+        <h1 class="main__users-title">List of contributors</h1>
+        <div>
+            <ul class="main__users-list">
+                <% if (users.length !== 0) { %>
+                    <% users.forEach(function(user, index) { %>
+                        <li>
+                            <p><%= user.firstName %> <%= user.lastName %></p>
+                            <a href="/delete-user/<%= index %>" class="button__general__settwo">✖</a>
+                        </li>
+                    <% }) %>
+                <% } else { %>
+                    <h1>Please add user.</h1>
+                <% } %>
+            </ul>
+        </div>
+    </main>
+    <%- include("partials/footer.ejs")%>
+</body>
+</html>

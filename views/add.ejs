@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head", {title: "Party Manager Add"})%>
+<body>
+    <div class="wrapper">
+        <%- include("partials/header")%>
+        <main>
+            <div class="main__item main__container">
+                <form class="main__form" action="/add__party" method="POST">
+                    <div class="main__left">
+                        <label for="name">Enter the meeting's title</label>
+                        <input name="name" type="text" id="name">
+                        <label for="info">Enter the meeting information</label>
+                        <textarea name="info" id="info"></textarea>
+                    </div>
+                    <div class="main__right">
+                        <label for="date">Enter the date of the appointment</label>
+                        <input name="date" type="datetime-local" id="date">
+                        <label for="loc">Location</label>
+                        <input name="location" type="text">
+                        <label for="users">Enter the participants of the meeting</label>
+                        <input name="users" type="number" id="users">
+                        <button class="button__general__settwo">ADD +</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <%- include("partials/footer")%>
+    </div>
+</body>
+</html>

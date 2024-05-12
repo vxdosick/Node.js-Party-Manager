@@ -1,0 +1,21 @@
+<div class="main__item">
+    <h2 class="main__title"><%= name %></h2>
+    <div class="main__info">
+        <div class="main__undertitle">
+            <p class="main__date">Date: <%= date %></p>
+            <div class="main__users">
+                <p>Contributors: 0/<%= users %></p>
+                <!-- тут ссылка---------------------------------- -->
+                <a class="main__check button__general__setone" href="/users">Check Users</a>
+                <a class="main__add button__general__setone" href="/add__users">+</a>
+            </div>
+        </div>
+        <p class="main__location">Location: <%= location %></p>
+    </div>
+    <p class="main__description"><%= info %></p>
+    <div class="main__settings">
+                <!-- тут ссылка---------------------------------- -->
+        <a class="button__general__settwo" href="/edit">Edit</a>
+        <a href="/delete-party/<%= index %>" class="button__general__settwo">Delete</a>
+    </div>
+</div>
