@@ -9,17 +9,17 @@
                 <form class="main__form" action="/add__party" method="POST">
                     <div class="main__left">
                         <label for="name">Enter the meeting's title</label>
-                        <input name="name" type="text" id="name">
+                        <input name="name" type="text" id="name" required>
                         <label for="info">Enter the meeting information</label>
-                        <textarea name="info" id="info"></textarea>
+                        <textarea name="info" id="info" required></textarea>
                     </div>
                     <div class="main__right">
                         <label for="date">Enter the date of the appointment</label>
-                        <input name="date" type="datetime-local" id="date">
+                        <input name="date" type="datetime-local" id="date" required>
                         <label for="loc">Location</label>
-                        <input name="location" type="text">
+                        <input name="location" type="text" required>
                         <label for="users">Enter the participants of the meeting</label>
-                        <input name="users" type="number" id="users">
+                        <input name="users" type="number" id="users" required>
                         <button class="button__general__settwo">ADD +</button>
                     </div>
                 </form>

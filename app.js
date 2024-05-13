@@ -20,7 +20,10 @@ app.post("/add__party", partyController.addParty)
 app.get("/users", checkUser.indexUser)
 app.get("/add__users", checkUser.addUsersForm)
 app.get('/delete-party/:index', partyController.deleteParty)
-app.get('/delete-user/:index', checkUser.deleteUser);
+app.get('/delete-user/:index', checkUser.deleteUser)
+app.get("/edit-party/:index", partyController.editPartyForm)
+app.post("/edit-party/:index", partyController.updateParty)
+
 app.post("/add__party", (req, res) => {
     Party.add(req.body)
     res.redirect("/")

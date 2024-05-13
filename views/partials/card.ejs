@@ -4,8 +4,7 @@
         <div class="main__undertitle">
             <p class="main__date">Date: <%= date %></p>
             <div class="main__users">
-                <p>Contributors: 0/<%= users %></p>
-                <!-- тут ссылка---------------------------------- -->
+                <p>Guests: max - <%= users%></p>
                 <a class="main__check button__general__setone" href="/users">Check Users</a>
                 <a class="main__add button__general__setone" href="/add__users">+</a>
             </div>
@@ -14,8 +13,7 @@
     </div>
     <p class="main__description"><%= info %></p>
     <div class="main__settings">
-                <!-- тут ссылка---------------------------------- -->
-        <a class="button__general__settwo" href="/edit">Edit</a>
+        <a class="button__general__settwo" href="/edit-party/<%= index %>">Edit</a>
         <a href="/delete-party/<%= index %>" class="button__general__settwo">Delete</a>
     </div>
 </div>
