@@ -14,6 +14,7 @@ Projekt został wykonany z użyciem:
 - EJS
 - Body-parser
 - Nodemon
+- Express-session
 
 ## Funkcjonalności
 - **Dodawanie i usuwanie wydarzeń (Add Party)**: Możliwość określenia nazwy, opisu, daty, miejsca, liczby uczestników.
