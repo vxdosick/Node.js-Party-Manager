@@ -1,14 +1,14 @@
-# System organizacji imprez i wydarzeń
+# System for organising events
 
-## Spis treści
-1. Strona główna, na której wyświetlane są wszystkie wydarzenia.
-2. Strona dodawania działań.
+## Table of contents
+1. Home page where all events are displayed.
+2. Action addition page.
 
-## Opis
-System organizacji imprez i wydarzeń to aplikacja webowa umożliwiająca zarządzanie wydarzeniami oraz uczestnikami tych wydarzeń.
+## Description
+The events and events organisation system is a web-based application for managing events and participants in these events.
 
-## Technologie
-Projekt został wykonany z użyciem:
+## Technologies
+The project was made using:
 - Node.js
 - Express.js
 - EJS
@@ -16,18 +16,18 @@ Projekt został wykonany z użyciem:
 - Nodemon
 - Express-session
 
-## Funkcjonalności
-- **Dodawanie i usuwanie wydarzeń (Add Party)**: Możliwość określenia nazwy, opisu, daty, miejsca, liczby uczestników.
-- **Dodawanie i przeglądanie uczestników (Check Users)**: Zarządzanie uczestnikami według imienia i nazwiska.
-- **Modyfikowanie dowolnego wydarzenia (Edytuj)**: Możliwość edycji informacji o wydarzeniach.
+## Functionality
+- Add and delete events (Add Party)**: Ability to specify name, description, date, venue, number of participants.
+- **Add and view participants (Check Users)**: Manage participants by name.
+- **Modifying any event (Edit)**: Ability to edit event information.
 
-## Instalacja
-Aby uruchomić projekt lokalnie, wykonaj następujące kroki:
-1. Pobierz repozytorium i rozpakuj je.
-2. Otwórz rozpakowany projekt w edytorze kodu.
-3. Otwórz terminal i wykonaj komendę `npm install` aby zainstalować wszystkie niezbędne pakiety.
-4. Następnie, aby uruchomić serwer, wpisz w terminalu `npm start`.
-5. Przejdź do przeglądarki i wpisz `http://localhost:3000/` w pasku adresu.
+## Installation
+To run the project locally, follow these steps:
+1. Download the repository and unzip it.
+2. open the unzipped project in the code editor.
+3. open a terminal and execute the `npm install` command to install all necessary packages.
+4. then, to start the server, type `npm start` in the terminal.
+5. go to your browser and type `http://localhost:3000/` in the address bar.
 
-## Jak korzystać
-Po uruchomieniu aplikacji, użytkownik może zarządzać wydarzeniami oraz uczestnikami przez interfejs webowy dostępny pod adresem `http://localhost:3000/`.
+## How to use
+Once the application is running, the user can manage events and participants via the web interface available at `http://localhost:3000/`.
