@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include("partials/head.ejs", {title: "Party Manager Add Users"})%>
-<body>
-    <%- include("partials/header.ejs")%>
-    <main>
+  <%- include("partials/head.ejs", {title: "Party Manager Add Users"})%>
+  <body>
+    <div>
+      <%- include("partials/header.ejs")%>
+      <main>
         <div class="main__item main__container">
-            <form class="main__form" action="add__users" method="POST">
-                <div class="main__left main__addusers">
-                    <label for="first">First name</label>
-                    <input name="firstName" type="text" id="first">
-                    <label for="last">Last name</label>
-                    <input name="lastName" type="text" id="last">
-                    <button class="button__general__settwo">ADD +</button>
-                </div>
-            </form>
+          <form class="main__form" action="add__users" method="POST">
+            <div class="main__left main__addusers">
+              <label for="first">First name</label>
+              <input name="firstName" type="text" id="first" />
+              <label for="last">Last name</label>
+              <input name="lastName" type="text" id="last" />
+              <button class="button__general__settwo">ADD +</button>
+            </div>
+          </form>
         </div>
-    </main>
-    <%- include("partials/footer.ejs")%>
-</body>
+      </main>
+      <%- include("partials/footer.ejs")%>
+    </div>
+  </body>
 </html>
